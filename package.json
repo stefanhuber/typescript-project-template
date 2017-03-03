@@ -1,7 +1,7 @@
 {
   "name": "typescript-project-template",
   "version": "1.0.0",
-  "description": "",
+  "description": " Simple typescript project template ",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc --target es5 --outDir dist src/index.ts",
@@ -11,7 +11,7 @@
     "start": "npm run build && node dist/index.js"
   },
   "author": "",
-  "license": "ISC",
+  "license": "BSD-2-Clause",
   "devDependencies": {
     "@types/jasmine": "^2.5.43",
     "@types/node": "^7.0.5",
