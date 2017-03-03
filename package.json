@@ -1,0 +1,21 @@
+{
+  "name": "typescript-project-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --target es5 --outDir dist src/index.ts",
+    "pretest": "tsc --target es5 --outDir ./.tmp test/index.ts",
+    "test": "jasmine ./.tmp/test/index.js",
+    "posttest": "rm -rf ./.tmp",
+    "start": "npm run build && node dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jasmine": "^2.5.43",
+    "@types/node": "^7.0.5",
+    "jasmine": "^2.5.3",
+    "typescript": "^2.2.1"
+  }
+}
