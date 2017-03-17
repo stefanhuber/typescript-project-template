@@ -8,14 +8,22 @@
     "pretest": "tsc --target es5 --outDir ./.tmp test/index.ts",
     "test": "jasmine ./.tmp/test/index.js",
     "posttest": "rm -rf ./.tmp",
-    "start": "npm run build && node dist/index.js"
+    "start": "npm run build && node dist/index.js",
+    "serve": "node scripts/serve.js"
   },
   "author": "",
   "license": "BSD-2-Clause",
   "devDependencies": {
     "@types/jasmine": "^2.5.43",
     "@types/node": "^7.0.5",
+    "chokidar": "^1.6.1",
+    "copyfiles": "^1.2.0",
     "jasmine": "^2.5.3",
+    "local-web-server": "^1.2.7",
+    "rollup": "^0.41.6",
+    "rollup-plugin-node-builtins": "^2.1.0",
+    "rollup-plugin-node-globals": "^1.1.0",
+    "rollup-plugin-typescript": "^0.8.1",
     "typescript": "^2.2.1"
   }
 }
