@@ -4,8 +4,6 @@
 
 ```
 src/index.ts     write programm code into this file (or import other files here)
-src/index.html   served html file
-src/style.css    imported css file
 test/index.ts    write tests or import tests here
 ```
 
@@ -15,5 +13,11 @@ test/index.ts    write tests or import tests here
 npm install      install all required node packages
 npm start        compile and run program
 npm test         compile and run jasmine tests
-npm run serve    serve web app on localhost:8000
 ```
+
+## Addional Features
+
+```
+Debugging configuration for vscode is supplied (.vscode/launch.json)
+```
+
