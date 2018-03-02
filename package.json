@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "pretest": "tsc --target es5 --outDir ./.tmp test/index.ts",
-    "test": "jasmine ./.tmp/index.js",
+    "test": "jasmine ./.tmp/test/index.js",
     "start": "npm run build && node dist/index.js"
   },
   "author": "Stefan Huber",
