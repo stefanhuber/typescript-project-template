@@ -1,26 +1,25 @@
 {
   "name": "typescript-project-template",
   "version": "1.0.0",
-  "description": " Simple typescript project template ",
+  "description": " Simple typescript project template",
   "main": "dist/js/bundle.js",
   "scripts": {
-    "build": "rollup -c",
-    "copy": "cpx src/www/**/* dist/",
     "pretest": "tsc --target es5 --outDir ./.tmp test/index.ts",
-    "test": "jasmine ./.tmp/test/index.js",
-    "start": "node dist/js/bundle.js",
-    "web": "http-server ./dist -o --cors"
+    "test": "npm run pretest && jasmine ./.tmp/test/index.js",
+    "build": "rollup -c",
+    "start": "http-server ./docs -o --cors",
+    "watch": "rollup -c -w"
   },
   "author": "Stefan Huber",
   "license": "BSD-2-Clause",
   "devDependencies": {
     "@types/jasmine": "^3.3.12",
-    "cpx": "^1.5.0",
     "http-server": "^0.11.1",
-    "jasmine": "^3.3.1",
-    "rollup": "^1.7.4",
+    "jasmine": "^3.4.0",
+    "rollup": "^1.10.0",
+    "rollup-plugin-copy": "^1.1.0",
     "rollup-plugin-typescript": "^1.0.1",
     "tslib": "^1.9.3",
-    "typescript": "^3.3.4000"
+    "typescript": "^3.4.3"
   }
 }

@@ -7,8 +7,8 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Programm starten",
-            "program": "${workspaceFolder}\\dist\\index.js",
+            "name": "Launch program",
+            "program": "${workspaceFolder}/docs/js/bundle.js",
             "sourceMaps": true,
             "outFiles": [
                 "${workspaceFolder}/**/*.js"

@@ -11,10 +11,10 @@ test/index.ts    write tests or import tests here
 
 ```
 npm install      install all required node packages
-npm run copy     copy www folder to dist
+npm start        run web-server
+npm test         compile and run jasmine tests
 npm run build    build typescript files
-npm run web      run web-server
-npm run test     compile and run jasmine tests
+npm run watch    watches filesystem and compiles any changes
 ```
 
 ## Addional Features
